@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/nav_bar" >
+
+        <TextView
+            android:id="@+id/tvnameapp"
+            style="@style/logo_shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/app_name"
+            android:textColor="#ffffff"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Button01"
+            style="@style/AudioFileInfoOverlayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="#00000000"
+            android:onClick="onClick"
+            android:paddingLeft="10dp"
+            android:text="@string/login"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btsetting"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/Button01"
+            android:background="@drawable/btsetting"
+            android:onClick="onClick"
+            android:textColor="@color/textthin" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" >
+
+        <Button
+            android:id="@+id/btprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.25"
+            android:background="@layout/btselector"
+            android:onClick="onClick"
+            android:text="@string/Profile"
+            android:textColor="@color/textthin" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="0.5dp"
+            android:layout_height="fill_parent"
+            android:background="@color/space_menu"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btactivity"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.25"
+            android:background="@layout/btselector"
+            android:onClick="onClick"
+            android:text="@string/Activity"
+            android:textColor="@color/textthin" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout02"
+            android:layout_width="0.5dp"
+            android:layout_height="fill_parent"
+            android:background="@color/space_menu"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btphoto"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.25"
+            android:background="@layout/btselector"
+            android:onClick="onClick"
+            android:text="@string/Photos"
+            android:textColor="@color/textthin" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout03"
+            android:layout_width="0.5dp"
+            android:layout_height="fill_parent"
+            android:background="@color/space_menu"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btelement"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.25"
+            android:background="@layout/btselector"
+            android:onClick="onClick"
+            android:text="@string/Elements"
+            android:textColor="@color/textthin" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/svcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llpage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/ivavatar"
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/box_gallery"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/activity_ivtitle" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="1dp" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/VirgilPana"
+                        android:textColor="@color/textbold"
+                        android:textSize="18dp" />
+
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="#00000000"
+                        android:drawableLeft="@drawable/location_icon"
+                        android:text="@string/Burcharest"
+                        android:textColor="@color/garry"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.33"
+                            android:background="@drawable/bt_left"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/TextView05"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_23"
+                                android:textColor="@color/textbold"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/TextView04"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="FOLLOWERS"
+                                android:textColor="@color/textbold"
+                                android:textSize="10dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.33"
+                            android:background="@drawable/bt_mid"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/TextView03"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_23"
+                                android:textColor="@color/textbold"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/TextView02"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="FOLLOWING"
+                                android:textColor="@color/textbold"
+                                android:textSize="10dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.33"
+                            android:background="@drawable/bt_right"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/TextView01"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_23"
+                                android:textColor="@color/textbold"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="UPDATES"
+                                android:textColor="@color/textbold"
+                                android:textSize="10dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/lltopfriend"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:background="@drawable/small_title"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvtopfriend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/topfriends"
+                    android:textColor="@color/textbold" />
+            </RelativeLayout>
+
+            <com.appdesigncentral.activity.HorizontialListView
+                android:id="@+id/lvgallery"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg" />
+
+            <RelativeLayout
+                android:id="@+id/llbio"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:background="@drawable/small_title"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvbio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/bio"
+                    android:textColor="@color/textbold" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvdesciption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:shadowColor="#fffef9"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:text="Description"
+                android:textColor="@color/textthin" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
